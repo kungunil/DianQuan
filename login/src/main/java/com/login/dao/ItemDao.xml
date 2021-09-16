@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.login.dao.ItemDao">
+    <!--使用insert,update,delete,select标签写sql语句-->
+    <select id="findKeyCount" resultType="java.lang.Integer">
+        select count(*) from item where title like "%"#{keywords}"%" or introduction like "%"#{keywords}"%" or username like "%"#{keywords}"%"
+    </select>
+    <select id="findByKeyWords" resultType="com.login.entity.Item">
+        select * from item where title like "%"#{keywords}"%" or introduction like "%"#{keywords}"%" or username like "%"#{keywords}"%"
+    </select>
+
+    <select id="selectOne" resultType="com.login.entity.Item">
+        select * from item where item_id = #{item_id}
+    </select>
+</mapper>

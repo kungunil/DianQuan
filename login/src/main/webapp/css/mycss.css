@@ -1,0 +1,15 @@
+nav {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: #0B2391;
+}
+ul.navbar {
+    color: #b3cccd;
+    margin-left: 2%;
+    list-style-type: none;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}

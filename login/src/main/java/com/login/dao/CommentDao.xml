@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.login.dao.CommentDao">
+    <!--使用insert,update,delete,select标签写sql语句-->
+    <select id="queryComment" resultType="com.login.entity.Comment">
+        select id,title,writer,date,text from comment where title like "%"#{keywords}"%" or
+      writer like "%"#{keywords}"%" or date like "%"#{keywords}"%" or text like "%"#{keywords}"%"
+    </select>
+    <select id="selectAll" resultType="com.login.entity.Comment">
+        select * from comment
+    </select>
+    <select id="selectOne" resultType="com.login.entity.Comment">
+        select * from comment where id=#{id}
+    </select>
+    <select id="findTotalCount" resultType="java.lang.Integer">
+        select count(*) from comment
+    </select>
+    <select id="findKeyCount" resultType="java.lang.Integer">
+        select count(*) from comment where title like "%"#{keywords}"%" or
+      writer like "%"#{keywords}"%" or date like "%"#{keywords}"%" or text like "%"#{keywords}"%"
+    </select>
+</mapper>

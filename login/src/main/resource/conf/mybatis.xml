@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--    设置日志-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+
+    <plugins>
+        <plugin interceptor ="com.github.pagehelper.PageInterceptor" />
+    </plugins>
+    <!-- 引入映射配置文件 -->
+    <!-- 找到其他文件的sql语句-->
+    <mappers>
+        <mapper resource="com/login/dao/UserDao.xml"/>
+        <mapper resource="com/login/dao/CommentDao.xml"/>
+        <mapper resource="com/login/dao/ItemDao.xml"/>
+        <mapper resource="com/login/dao/TrcmitemDao.xml"/>
+<!--        <package name="com.login.dao"/>-->
+    </mappers>
+</configuration>

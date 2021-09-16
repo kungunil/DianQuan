@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/item.css">
+    <title>物品条目页面</title>
+    <style>
+        .recmd {
+            text-decoration: none;
+            color: #169BD5;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <a href="../"
+          ><img src="../image/logo.png" alt="logo" width="75px" height="40px"
+        /></a>
+        <li><a href="../search.jsp">搜索发现</a><li>
+        <li id="loginplace"><a href="../loginUser.jsp" id="a">登录/注册</a><li></li>
+      </ul>
+    </nav>
+    <div class="item">
+      <div class="title">
+        <h2>条目标题</h2>
+        <a href="#" class="recmd recmditem">推荐条目</a>
+      </div>
+      <div>
+        <textarea id="info" readonly></textarea>
+      </div>
+    </div>
+    <div class="usrcmt">
+      <h3>用户名</h3>
+      <a href="#" class="recmd recmdcmt">推荐点评</a>
+      <div class="commentview"></div>
+    </div>
+    <div class="usrcmt">
+      <h3>用户名</h3>
+      <a href="#" class="recmd recmdcmt">推荐点评</a>
+      <div class="commentview"></div>
+    </div>
+    <div class="usrcmt">
+      <h3>用户名</h3>
+      <a href="#" class="recmd recmdcmt">推荐点评</a>
+      <div class="commentview"></div>
+    </div>
+
+    <script src="../js/adminitem.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    resize: none;
+    outline: none;
+    text-indent: 3rem;
+}
+nav {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: #0B2391;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+ul.navbar {
+    color: #b3cccd;
+    margin-left: 2%;
+    list-style-type: none;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+.item {
+    padding-left: 30px;
+}
+.item > div:last-child {
+    display: flex;
+    align-items: flex-end;
+}
+.title {
+    position: relative;
+    margin-bottom: 10px;
+    width: 90%;
+    border-bottom: 1px dashed black;
+}
+.title h2 {
+    margin: 0;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 2rem;
+}
+#follow {
+    color: #538EFC;
+    cursor: pointer;
+}
+#info {
+    display: inline-block;
+    width: 85%;
+    height: 200px;
+    overflow: auto;
+}
+#comment {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    color: #1f1235;
+    background-color: #ff6e6c;
+    border: 1px solid black;
+    margin-left: 2%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.commentinput {
+    width: 90%;
+    display: none;
+    border: 0.1px solid black;
+    margin: 30px 5%;
+    overflow: hidden;
+}
+.cmtoption {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    margin-top: 10px;
+}
+.usrcmt {
+    margin: 20px 0;
+    height: 300px;
+}
+.usrcmt h3 {
+    display: inline-block;
+    margin-left: 2%;
+    text-align: center;
+}
+.commentview {
+    text-indent: 3rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    border-style: none;
+    border-bottom: 1px solid black;
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+    height: 200px;
+    overflow: auto;
+}
+.commentview img {
+    height: 98%;
+    float: right;
+}
+.like {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.like img {
+    width: 30px;
+    height: 30px;
+}
+.markico {
+    position: relative;
+    bottom: -4px;
+    width: 20px;
+    height: 20px;
+}
+#cmttext {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    overflow: auto;
+    margin-right: 5px;
+    display: block;
+}
+.imgbackshow {
+    background-color: #1f1235;
+    display: none;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    height: 300px;
+}
+.imgbackshow img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}

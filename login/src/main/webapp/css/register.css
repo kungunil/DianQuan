@@ -1,0 +1,66 @@
+body{
+    margin: 0px 0px auto 0px;
+}
+.rg_head{
+    background-color: gray;
+    height: 80px;
+}
+.rg_layout{
+    background-color: cornflowerblue;
+    height: 600px;
+    width: 900px;
+    margin: 20px auto auto;
+}
+.rg_left{
+    width: 420px;
+    height: 500px;
+    float: left;
+    margin: 50px auto auto 20px;
+}
+.rg_right{
+    width: 420px;
+    height: 500px;
+    float: left;
+    margin: 50px auto auto 20px;
+    background-color: white;
+}
+.rg_form{
+    margin: 20px auto auto;
+    text-align: left ;
+    height: 440px;
+    background-color: white;
+}
+.td_left{
+    width: 100px;
+    height: 20px;
+    text-align: right;
+}
+.td_right{
+    padding-left: 30px;
+}
+.admin_lg{
+    float: right;
+}
+.rg_msg{
+    height: 80px;
+    background-color: cadetblue;
+    text-align: center;
+}
+input[type=submit]{
+    width: 150px;
+    height: 40px;
+}
+input[type=button]{
+    width: 150px;
+    height: 40px;
+}
+#username,#password1,#password2,#telephone,#email,#question,#answer,#input_verifyCode{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #A6A6A6;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.rg_reset{
+    float: right;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.login.dao.UserDao">
+    <!--使用insert,update,delete,select标签写sql语句-->
+    <select id="QueryUserByName" resultType="com.login.entity.User">
+        select user_id as u_id,username,password,telephone,email,question,answer,type from user where username=#{username}
+    </select>
+
+    <insert id="insertUser">
+        insert into user (username,password,telephone,email,question,answer,type,attention,collection,mysay_id)
+               values(#{username},#{password},#{telephone},#{email},#{question},#{answer},2,"","","")
+    </insert>
+</mapper>
